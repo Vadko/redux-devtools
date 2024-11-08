@@ -37,8 +37,7 @@
     "clean": "rimraf lib",
     "lint": "eslint . --ext .ts",
     "type-check": "tsc --noEmit",
-    "prepack": "yarn clean && yarn build",
-    "prepublish": "yarn type-check && yarn lint"
+    "prepack": "npm run clean && npm run build"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.8",
